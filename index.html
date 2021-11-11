@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    console.log("1.start")
+    //   function execute(a,b,cb){ 
+    //        setTimeout(function () {
+    //            var result =a + b;
+    //           cb(result);
+    //        },5000)}
+    //        execute(10,5,function(result){
+    //         console.log(result);
+    //        }) 
+      
+  var mydiv=document.createElement("div")
+  mydiv.style.width="250px";
+  mydiv.style.height="100px";
+  mydiv.style.backgroundColor="yellow";
+  mydiv.style.position="absolute";
+  mydiv.style.left="500px";
+  mydiv.style.top="200px";
+  mydiv.style.fontSize = "50px";
+  mydiv.style.textAlign = "center";
+  
+  
+  document.body.appendChild(mydiv)
+  
+  count = function(){
+      mydiv.innerText="HAPPY BIRTHDAY";
+      
+  }
+  count0 = function(){
+      mydiv.innerText="0";
+      myVar = setTimeout(count, 1000);
+  }
+  count1 = function(){
+      mydiv.innerText="1";
+      myVar = setTimeout(count0, 1000);
+  }
+  count2 = function(){
+      mydiv.innerText="2";
+      myVar = setTimeout(count1, 1000);
+  }
+  count3 = function(){
+      mydiv.innerText="3";
+      myVar = setTimeout(count2, 1000);
+  }
+  count4 = function(){
+      mydiv.innerText="4";
+      myVar = setTimeout(count3, 1000);
+  }
+  count5 = function(){
+      mydiv.innerText="5";
+      myVar = setTimeout(count4, 1000);
+  }
+  count6 = function(){
+      mydiv.innerText="6";
+      myVar = setTimeout(count5, 1000);
+  }
+  count7 = function(){
+      mydiv.innerText="7";
+      myVar = setTimeout(count6, 1000);
+  }
+   count8 = function(){
+       mydiv.innerText="8";
+       myVar = setTimeout(count7, 1000);
+   }
+   var count9 = function(){
+       mydiv.innerText="9";
+       myVar = setTimeout(count8, 1000);
+   }
+  var count10=function(){
+      mydiv.innerText="10"
+      myVar = setTimeout(count9, 1000);
+  }
+  myVar = setTimeout(count10, 1000);
+       
+    </script>
+</body>
+</html>
